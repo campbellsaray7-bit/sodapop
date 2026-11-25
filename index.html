@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Un pequeño detalle para ti 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="background-hearts">♡　♡　♡　♡　♡</div>
+
+    <main class="app">
+
+        <!-- INDICADOR DE PÁGINAS -->
+
+        <div class="top-bar">
+            <span>un pequeño rincón para ti ♡</span>
+            <span id="pageNumber">01 / 05</span>
+        </div>
+
+
+        <!-- PÁGINA 1: BIENVENIDA -->
+
+        <section class="screen active" id="page1">
+
+            <div class="content">
+
+                <p class="tag">ARCHIVO ULTRA CONFIDENCIAL</p>
+
+                <h1>
+                    ¡OYE, TÚ!
+                    <span>sí, tú. 👀</span>
+                </h1>
+
+                <div class="character">
+                    <img src="img/descarga (6).jfif" alt="Snoopy saludando">
+                    <div class="fallback"></div>
+                </div>
+
+                <div class="speech">
+                    Hola, tenemos algo que mostrarte.
+                    Y no, no es ningun virus.
+                </div>
+
+                <p class="description">
+                    Has sido seleccionada para una misión
+                    extremadamente importante.
+                    No puedes rechazarla. Bueno, sí puedes,
+                    pero depues pensaré que me odias.
+                </p>
+
+                <button class="next-btn" onclick="nextPage()">
+                    Aceptar misión 🚀
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PÁGINA 2: MISIÓN -->
+
+        <section class="screen" id="page2">
+
+            <div class="content">
+
+                <p class="tag">MISIÓN N.º 001</p>
+
+                <h2>
+                    Tenemos un pequeño problema...
+                </h2>
+
+                <div class="character medium">
+                    <img src="img/2026.jfif" alt="Snoopy con una carta">
+                    <div class="fallback">📋</div>
+                </div>
+
+                <div class="paper">
+
+                    <h3>INFORME DE INVESTIGACIÓN</h3>
+
+                    <p>Después de analizar el caso, descubrimos que:</p>
+
+                    <ul>
+                        <li>Tu existencia mejora ciertos días.</li>
+                        <li>Hablar contigo es bastante agradable estar.</li>
+                        <li>Tienes una habilidad sospechosa para ponerme nerviosa.</li>
+                        <li>Alguien piensa en ti más de lo que admite.</li>
+                    </ul>
+
+                    <p class="small-note">
+                        *La investigación fue realizada por Snoopy.
+                        No se utilizaron métodos científicos.
+                    </p>
+
+                </div>
+
+                <button class="next-btn" onclick="nextPage()">
+                    Continuar investigación 🔎
+                </button>
+
+                <button class="back-btn" onclick="prevPage()">
+                    ← Volver
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PÁGINA 3: PRUEBAS -->
+
+        <section class="screen" id="page3">
+
+            <div class="content">
+
+                <p class="tag">EVIDENCIA RECOLECTADA</p>
+
+                <h2>Pruebas irrefutables.</h2>
+
+                <p class="description">
+                    No tenemos argumentos científicos,
+                    pero tenemos memes. Y eso es mucho mejor.
+                </p>
+
+                <div class="meme-grid">
+
+                    <div class="meme">
+                        <img src="img/noteit.jfif" alt="Meme uno">
+                        <span>PRUEBA A</span>
+                    </div>
+
+                    <div class="meme">
+                        <img src="img/soda pop.jfif" alt="Meme dos">
+                        <span>PRUEBA B</span>
+                    </div>
+
+                    <div class="meme photo">
+                        <img src="img/imisyou.jfif" alt="Fotografía especial">
+                        <span>PRUEBA C</span>
+                    </div>
+
+                </div>
+
+                <div class="speech">
+                    en conclusion, me gustas mucho con bastante
+                </div>
+
+                <button class="next-btn" onclick="nextPage()">
+                    Tengo curiosidad... 👀
+                </button>
+
+                <button class="back-btn" onclick="prevPage()">
+                    ← Volver
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PÁGINA 4: FLORES -->
+
+        <section class="screen" id="page4">
+
+            <div class="content">
+
+                <p class="tag">ENTREGA ESPECIAL 💌</p>
+
+                <h2>
+                    Bueno... esto es para ti.
+                </h2>
+
+                <div class="character medium">
+                    <img src="img/flores.jfif" alt="Snoopy con flores">
+                    <div class="fallback">
+                    </div>
+                </div>
+
+                <p class="description">
+                    
+                </p>
+
+                <p class="description">
+                    tarammmm
+                </p>
+
+                <button id="flowerBtn" class="next-btn">
+                    Recibir mis flores 🌸
+                </button>
+
+                <div id="bouquet" class="bouquet hidden">
+
+                    <div class="flowers">
+                        🌷 🌸 🌹 🌼 🌷
+                    </div>
+
+                    <h3>¡SON PARA TI!</h3>
+
+                    <p>
+                        Porque te mereces cosas bonitas,
+                        incluso en los días normales. 💗
+                    </p>
+
+                </div>
+
+                <button class="next-btn hidden" id="flowerNext"
+                    onclick="nextPage()">
+                    Hay algo más... 💌
+                </button>
+
+                <button class="back-btn" onclick="prevPage()">
+                    ← Volver
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PÁGINA 5: FINAL -->
+
+        <section class="screen" id="page5">
+
+            <div class="content">
+
+                <p class="tag">FIN DEL INFORME</p>
+
+                <h2>
+                    Una última cosita...
+                </h2>
+
+                <div class="character">
+                    <img src="img/Snoopy.jfif" alt="Snoopy y Woodstock">
+                    <div class="fallback">
+
+            
+                    </div>
+                </div>
+
+                <div class="paper final-paper">
+
+                    <h3>Querida tú:</h3>
+
+                    <p>
+                        Sé que ya te tendré cansada diciendote que me gustas
+                        pero ahorita se acaba el mundo y no esta mal recordartelo una vez mas                   </p>
+
+                    <p>
+                       soy una intensa y estas bobadas tal vez te parezcan lindas, solo pense en lo mucho que te daria risa esto          </p>
+
+                    <p>
+                       Y ya solo era eso, no hay ninguna misión secreta,
+                        ni preguntas difíciles.
+                        Solo quería hacerte reir.
+                    </p>
+
+                    <p class="signature">
+                        Con cariño,
+                        alguien que te quiere mucho. ♡
+                    </p>
+
+                </div>
+
+                <button class="next-btn" id="surpriseBtn">
+                    Una última sorpresa 🎁
+                </button>
+
+                <div id="surprise" class="hidden surprise">
+
+                    <h2>¡TE GANASTE UN ABRAZO o un beso...!</h2>
+
+                    <div class="big-heart">💗</div>
+
+                    <p>
+                       
+                        No tiene fecha de vencimiento.
+                    </p>
+
+                    <p>Atentamente: campbELL. 
+                        para: mi soda pop
+                    </p>
+
+                </div>
+
+                <button class="back-btn" onclick="prevPage()">
+                    ← Volver
+                </button>
+
+                <button class="restart-btn" onclick="goHome()">
+                    Volver a empezar ↻
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            made with ♡ and a little bit of delusion
+        </footer>
+
+    </main>
+
+</body>
+</html>
+
